@@ -373,9 +373,40 @@ h1{
     box-sizing: border-box;
 }
 
-
 /*************************************
     5th section
+**************************************/
+.section-five{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.block5 {
+    text-align: right;
+    margin: 50vh 0vh 0vh 0vh;
+    height: 1021px;
+    float: right;
+    width: 50%;
+}
+.inner5 {
+    
+    width: 60%;
+    height: 220vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url(../img/mounted6.a0c77bf4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    box-sizing: border-box;
+    overflow: visible;
+    z-index: -1;
+}
+
+/*************************************
+    6th section
 **************************************/
 
 .back-image {
