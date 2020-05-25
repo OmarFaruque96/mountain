@@ -14,7 +14,7 @@
 
   </head>
   <body>
-  <header>
+  <header id="header">
     <div class="menu" id="#header-menu">
           <!-- <div class="preLoader">
             <p> . . . Loading</p>
@@ -76,13 +76,14 @@
         </p>
       </section>
 
+      <div id="hello" style="height: 20px;"></div>
 
       <!-- shoe image section start -->
-      <section class="container" style="margin-top: 300px; height: 170vh;">
+      <section class="container" id="boot" style="margin-top: 300px; height: 170vh;">
         <div class="right">
           <img src="img/boot.jpg">
-          <div class="left"  style="transform: translate3d(0px, 112.512px, 0px);">
-          <img src="img/boot.jpg" width="561px">
+          <div class="rellax left" id="skew" data-rellax-percentage="5" style="transform: translate3d(0px, 86.112px, 0px);">
+          <img src="img/boot.jpg" width="561px" id="he">
           </div>
         </div>
       </section>
@@ -240,8 +241,32 @@
       </section>
 
 
-      <section class="black">
-        
+      <section class="footer" id="hh">
+        <div class="line">
+          <div class="horizontal">
+            <span class="two"></span>
+            <span class="three">
+              <p id="#header">back to top</p>
+            </span>
+            <span class="four"></span>
+            <span class="five"></span>
+            <span class="six"></span>
+          </div>
+          <div class="vertical">
+            <span class="two"></span>
+            <span class="three"></span>
+          </div>
+        </div>
+
+        <!-- footer social menu -->
+        <div class="social-menu">
+          <ul>
+            <li><a href=""></a>INSTAGRAM</li>
+            <li><a href=""></a>FACEBOOK</li>
+            <li><a href=""></a>PRIVACY</li>
+            <li><a href=""></a>TERMS & CONDITION</li>
+          </ul>
+        </div>
       </section>
 
 
@@ -263,6 +288,29 @@
             center: true,
             wrapper: document.querySelector('.wrapper') // or '.Layout__main'
         });
+    </script>
+    <script type="text/javascript">
+       
+      // window.addEventListener("scroll", function(event){
+      //     var scroll = this.scrollY;
+      //     if(scroll > 0){
+      //       document.body.style.background = "pink";
+      //       alert("hello bud"); 
+      //     } 
+      // });
+      // function myFunction() {
+      //   document.getElementById("hello").style.overflow = "visible";
+      //   document.getElementById("he").style.skew = "0"+"0";
+      //   alert("hi");
+      // }
+      $(document).ready(function(){
+        $(".footer").scroll(function(){
+
+          // document.body.style.font-size = "60px";
+
+        });
+      });
+
     </script>
   </body>
 </html>
